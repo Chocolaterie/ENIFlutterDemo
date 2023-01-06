@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hello_world/pages/counter-page.dart';
 import 'package:hello_world/pages/demo-animation.dart';
 import 'package:hello_world/pages/demo-archi.dart';
+import 'package:hello_world/pages/demo-article.dart';
 import 'package:hello_world/pages/demo-form-validator.dart';
 import 'package:hello_world/pages/demo-form.dart';
 import 'package:hello_world/pages/demo-height.dart';
@@ -25,7 +26,7 @@ class MyApplication extends StatelessWidget {
     return ChangeNotifierProvider(
       create: ((context) => CounterProvider(counter: 1)),
       child: MaterialApp(
-        home: DemoFormValidatorPage(),
+        home: DemoArticlePage(),
         routes: {
           "/second": (context) => const SecondPage(),
           "info-provider": (context) => const CounterPage()
